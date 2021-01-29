@@ -13,20 +13,20 @@ app.use(express.json());
 
 app.use(express.static("public"));
 
-// mongoose.connect(
-//   process.env.MONGODB_URI ||'mongodb://localhost/workout', {
-//   useNewUrlParser: true,
-//   useUnifiedTopology: true,
-//   useCreateIndex: true,
-//   useFindAndModify: false
-// });
 mongoose.connect(
-  'mongodb+srv://haolam:hana123@cluster0.1pczb.mongodb.net/workout?retryWrites=true&w=majority', {
+  process.env.MONGODB_URI ||'mongodb://localhost/workout', {
   useNewUrlParser: true,
-  // useUnifiedTopology: true,
-  // useCreateIndex: true,
+  useUnifiedTopology: true,
+  useCreateIndex: true,
   useFindAndModify: false
 });
+// mongoose.connect(
+//   'mongodb+srv://haolam:hana123@cluster0.1pczb.mongodb.net/workout?retryWrites=true&w=majority', {
+//   useNewUrlParser: true,
+//   // useUnifiedTopology: true,
+//   // useCreateIndex: true,
+//   useFindAndModify: false
+// });
 
 // routes
 app.use(require("./routes/api.js"));
