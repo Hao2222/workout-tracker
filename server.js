@@ -18,7 +18,6 @@ app.use(express.static("public"));
 
 var MONGODB_URI = 'mongodb+srv://haolam:hana123@cluster0.1pczb.mongodb.net/workout?retryWrites=true&w=majority';
 mongoose.connect(
-
   MONGODB_URI || 'mongodb://localhost/workout', {
   useNewUrlParser: true,
   useUnifiedTopology: true,
