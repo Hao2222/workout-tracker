@@ -1,28 +1,28 @@
 {
   "name": "workout-tracker",
   "version": "1.0.0",
-  "description": "",
+  "description": "This workout application will allow the user to create and track daily workouts. The user will be able to log multiple exercises in a workout on a given day. The user also able to track the name, type, weight, sets, reps, and duration of exercise. If the exercise is a cardio exercise, the user should be able to track the distance traveled.",
   "main": "server.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node server.js",
-    "watch": "nodemon server.js",
-    "seed": "node seeders/seed.js"
-  },
-  "author": "",
-  "license": "ISC",
   "dependencies": {
     "body-parser": "^1.19.0",
-    "express": "^4.16.3",
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
     "mongodb": "^3.6.3",
     "mongoose": "^5.11.14",
-    "morgan": "^1.9.1"
+    "morgan": "^1.10.0",
+    "path": "^0.12.7"
   },
   "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/Hao2222/workout-tracker.git"
   },
+  "author": "",
+  "license": "ISC",
   "bugs": {
     "url": "https://github.com/Hao2222/workout-tracker/issues"
   },
